@@ -8,13 +8,14 @@ and open the template in the editor.
     Author     : jp_20
 */
 ul.products li {
-    width: 370px; /* adjust the size of the catalog block */
-    display: inline-block; /* this creates the catalog effect */
-    text-align: center; /* align the image to center */
-    background-color:#282828 ; /* background color of each */
+    
+    width: 370px; 
+    display: inline-block; 
+    text-align: center; 
+    background-color:#282828 ; 
     font-family: "Trebuchet MS", Helvetica, sans-serif; 
-    border-radius: 10px; /* rounded borders effect */
-    border: 2px solid #585858; /* border and color */
+    border-radius: 8px; 
+    border: 2px solid #585858; 
 }
 #block_1
 	{
@@ -37,23 +38,15 @@ ul.products li {
 	float: left;
 	width: 33%;
 	}
-/* we need this for IE 5.01 - otherwise the wrapper does not expand to the
-necessary height (unless fixed, this problem becomes even more acute 
-weirdness as the method is enhanced */
+
 #wrapper
 	{
-/* Normally a Holly-style hack height: 1% would suffice but that causes 
-IE 5.01 to completely collapse the wrapper - instead we float it */
+
 	float: left;
-/* NB. possibly only IE 5.01 needs to get this float value - otherwise 5.5 sometimes 
-(I saw it happen many moons ago) makes the width of wrapper too small 
-the float: none with the comment is ignored by 5.01,
-5.5 and above see it and carry on about their business
-It's probably fine to just remove it, but it's left here 
-just in case that many moons ago problem rears its head again */
-	float/**/: none;
+
+	float: none;
 	}
-/* easy clearing */
+
 #wrapper:after
 	{
 	content: '[DO NOT LEAVE IT IS NOT REAL]'; 
@@ -66,12 +59,12 @@ just in case that many moons ago problem rears its head again */
 	{
 	display: inline-block;
 	}
-/*\*/
+
 #wrapper
 	{
 	display: block;
 	}
-/* end easy clearing */
+
 #footer
 	{
 	clear: both;
