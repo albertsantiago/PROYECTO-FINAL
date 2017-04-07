@@ -4,19 +4,38 @@ To change this template file, choose Tools | Templates
 and open the template in the editor.
 */
 /* 
-    Created on : Apr 6, 2017, 9:48:05 PM
-    Author     : Albert Santiago
+    Created on : Apr 6, 2017, 10:56:14 PM
+    Author     : jp_20
 */
-
+ul.products li {
+    width: 370px; /* adjust the size of the catalog block */
+    display: inline-block; /* this creates the catalog effect */
+    text-align: center; /* align the image to center */
+    background-color:#282828 ; /* background color of each */
+    font-family: "Trebuchet MS", Helvetica, sans-serif; 
+    border-radius: 10px; /* rounded borders effect */
+    border: 2px solid #585858; /* border and color */
+}
 #block_1
 	{
 	float: left;
-	width: 25%;
+	width: 34%;
+	margin-left: 33%;
+	}
+* html #block_1
+	{
+	display: inline;
 	}
 #block_2
 	{
-	float: right;
-	width: 65%;
+	float: left;
+	width: 33%;
+	margin-left: -67%;
+	}
+#block_3
+	{
+	float: left;
+	width: 33%;
 	}
 /* we need this for IE 5.01 - otherwise the wrapper does not expand to the
 necessary height (unless fixed, this problem becomes even more acute 
@@ -50,31 +69,10 @@ just in case that many moons ago problem rears its head again */
 /*\*/
 #wrapper
 	{
-             background-image: url("https://s-media-cache-ak0.pinimg.com/originals/c3/9f/fc/c39ffcc41db99c7e658a1aeee63d65b5.png");
 	display: block;
 	}
 /* end easy clearing */
 #footer
 	{
 	clear: both;
-	}
-        .vertical-menu {
-    width: 200px; /* Set a width if you like */
-}
-
-.vertical-menu a {
-    background-color: #eee; /* Grey background color */
-    color: black; /* Black text color */
-    display: block; /* Make the links appear below each other */
-    padding: 12px; /* Add some padding */
-    text-decoration: none; /* Remove underline from links */
-}
-
-.vertical-menu a:hover {
-    background-color: #ccc; /* Dark grey background on mouse-over */
-}
-
-.vertical-menu a.active {
-    background-color: #4CAF50; /* Add a green color to the "active/current" link */
-    color: white;
 }
